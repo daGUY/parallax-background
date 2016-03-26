@@ -9,16 +9,34 @@ Applies a basic parallax effect to an element, creating the impression that the 
 * [jQuery](http://jquery.org/)
 
 ## Use
-To use the parallax effect on an element, simply add the `.parallax` class to any element that has a background image:
+Include jQuery and the `jquery.parallax.js` plugin in your HTML:
 
 ```html
-<div class="chaz parallax"></div>
-``` 
-
-## Options
-You can adjust how prominent the parallax effect is by changing the multiple used to calculate the background image position. Values closer to `1` make the effect stronger, while values closer to `0` make it weaker. The default value is `0.2`.
-
-```javascript
-parallax = Math.floor((scroll - offset) * 0.2);
+<script src="lib/jquery.min.js"></script>
+<script src="lib/jquery.parallax.js"></script>
 ```
 
+Then call `parallax()` on any elements with background images that you wish to apply the effect to:
+
+```html
+$(document).ready(function() {
+	$(".chaz").parallax();
+});
+```
+
+## Options
+The following options are available:
+
+```html
+$(".chaz").parallax({
+	strength: 0.2
+});
+```
+
+`strength`: determines how prominent the parallax effect is, on a scale of `0` to `1`. The default is `0.2`.
+
+## Notes
+
+`strength: 0` is equivalent to not having a parallax effect at all, since the element's background image will move exactly in tandem with the rest of the page as the user scrolls. In this case, rather than calculate the background image's position for no reason, the plugin simply does nothing.
+
+`strength: 1` is the opposite, meaning the element's background image won't move at all as the user scrolls. Again, rather than continually calculate the background image's position when the value would never change, the plugin just sets `background-attachment: fixed;` on the element.
