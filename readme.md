@@ -3,7 +3,7 @@
 * June 2015
 
 ## Description
-Applies a basic parallax effect to an element, creating the impression that the element moves at a different speed from the rest of the page while scrolling.
+Applies a basic parallax effect to an element's background image, creating the impression that it moves at a different speed from the rest of the page while scrolling.
 
 ## Dependencies
 * [jQuery](http://jquery.org/)

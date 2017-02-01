@@ -8,8 +8,8 @@ p {
 	margin: 1em;
 	line-height: 1.25em;
 }
-.chaz {
-	background: #f5f5f5 url("../img/chaz.jpg") no-repeat;
+.bg {
+	background: #f5f5f5 url("../img/bg.jpg") no-repeat;
 	background-size: cover;
 	height: 600px;
 }
