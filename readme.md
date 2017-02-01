@@ -20,7 +20,7 @@ Then call `parallax()` on any elements with background images that you wish to a
 
 ```html
 $(document).ready(function() {
-	$(".chaz").parallax();
+	$(".bg").parallax();
 });
 ```
 
@@ -28,7 +28,7 @@ $(document).ready(function() {
 The following options are available:
 
 ```html
-$(".chaz").parallax({
+$(".bg").parallax({
 	strength: 0.2
 });
 ```
