@@ -11,11 +11,11 @@ Applies a basic parallax effect to an element's background image, creating the i
 * [jQuery](http://jquery.org/)
 
 ## Use
-Include jQuery and the `jquery.parallax.js` plugin in your HTML:
+Include jQuery and the `jquery.parallax.min.js` plugin in your HTML:
 
 ```html
 <script src="lib/jquery.min.js"></script>
-<script src="lib/jquery.parallax.js"></script>
+<script src="lib/jquery.parallax.min.js"></script>
 ```
 
 Then call `parallax()` on any elements with background images that you wish to apply the effect to:
